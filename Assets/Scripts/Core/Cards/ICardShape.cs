@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Core.Cards
+﻿namespace TrueColors.Core.Cards
 {
     public interface ICardShape
     {

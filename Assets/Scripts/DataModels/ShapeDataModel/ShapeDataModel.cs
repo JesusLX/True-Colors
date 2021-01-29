@@ -1,5 +1,7 @@
 ﻿using System;
-using Assets.Scripts.Core.Cards;
+using TrueColors.Converters;
+using TrueColors.Core.Cards;
+using TrueColors.Util;
 using UnityEngine;
 
 namespace TrueColors.Data
@@ -9,5 +11,11 @@ namespace TrueColors.Data
     {
         public Sprite artwork;
         [ClassImplements(typeof(ICardShape))] public ClassTypeReference type;
+        
+        readonly  IConverter<ShapeDataModel, ICardShape> converter = new ShapeDataModelConverter();
+        
+        #region Converter
+        public ICardShape ToCardShape() => converter.Convert(this);
+        #endregion
     }
 }

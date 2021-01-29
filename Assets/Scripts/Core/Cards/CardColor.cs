@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Core.Cards
+﻿namespace TrueColors.Core.Cards
 {
     public abstract class CardColor : ICardColor
     {
