@@ -12,8 +12,7 @@ namespace TrueColors.View
         public GameObject cardReverse;
 
         [Header("Card Front")] 
-        public Image externalBG;
-        public Image internalBG;
+        public Image background;
         public Image icon;
     }
     
@@ -31,8 +30,7 @@ namespace TrueColors.View
         
         public void Present(CardDataModel data)
         {
-            references.externalBG.color = data.color.Data.color;
-            references.internalBG.color = data.color.Data.color;
+            references.background.color = data.color.Data.color;
             references.icon.sprite = data.shape.Data.artwork;
         }
     }

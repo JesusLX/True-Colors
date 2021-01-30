@@ -8,5 +8,33 @@
     public class Hearth : CardShape
     {
     }
+
+    public class Water : CardShape
+    {
+    }
+
+    public class Cross : CardShape
+    {
+    }
+
+    public class Sun : CardShape
+    {
+    }
+
+    public class Eye : CardShape
+    {
+    }
+
+    public class Sprout : CardShape
+    {
+    }
+
+    public class Music : CardShape
+    {
+    }
+
+    public class Moon : CardShape
+    {
+    }
     #endregion
 }
