@@ -9,7 +9,7 @@ namespace TrueColors.Data
     [Serializable]
     public class ColorDataModel
     {
-        public Gradient color;
+        public Color color;
         [ClassImplements(typeof(ICardColor))] public ClassTypeReference type;
         
         readonly  IConverter<ColorDataModel, ICardColor> converter = new ColorDataModelConverter();

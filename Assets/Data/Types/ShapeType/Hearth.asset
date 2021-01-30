@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Hearth
   m_EditorClassIdentifier: 
   data:
-    artwork: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    artwork: {fileID: -5458410342749188134, guid: 8f328f6a3ce324443bad6a0ea7c53447,
+      type: 3}
     type:
-      classRef: Assets.Scripts.Core.Cards.Hearth, Assembly-CSharp
+      classRef: TrueColors.Core.Cards.Hearth, Assembly-CSharp
