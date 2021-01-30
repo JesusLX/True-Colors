@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2616ff4b48aaa754997584a57eef780f, type: 3}
-  m_Name: New Card
+  m_Name: Water
   m_EditorClassIdentifier: 
   data:
-    artwork: {fileID: 0}
+    artwork: {fileID: -8924679138477624899, guid: 8f328f6a3ce324443bad6a0ea7c53447,
+      type: 3}
     type:
-      classRef: 
+      classRef: TrueColors.Core.Cards.Water, Assembly-CSharp

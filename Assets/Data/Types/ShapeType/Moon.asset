@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Moon
   m_EditorClassIdentifier: 
   data:
-    artwork: {fileID: 0}
+    artwork: {fileID: -1312104197825666566, guid: 8f328f6a3ce324443bad6a0ea7c53447,
+      type: 3}
     type:
-      classRef: 
+      classRef: TrueColors.Core.Cards.Moon, Assembly-CSharp
