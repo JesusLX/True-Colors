@@ -98,6 +98,12 @@ TextureImporter:
   - first:
       213: 4403651396859423857
     second: basics_11
+  - first:
+      213: 7427544600831606580
+    second: basics_12
+  - first:
+      213: -8719349295291000950
+    second: basics_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -215,7 +221,7 @@ TextureImporter:
         width: 340
         height: 538
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +242,7 @@ TextureImporter:
         width: 241
         height: 248
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +263,7 @@ TextureImporter:
         width: 212
         height: 213
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +284,7 @@ TextureImporter:
         width: 246
         height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +305,7 @@ TextureImporter:
         width: 340
         height: 538
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +326,7 @@ TextureImporter:
         width: 278
         height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +347,7 @@ TextureImporter:
         width: 240
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +368,7 @@ TextureImporter:
         width: 257
         height: 205
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,7 +389,7 @@ TextureImporter:
         width: 326
         height: 426
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +410,7 @@ TextureImporter:
         width: 454
         height: 453
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,12 +426,12 @@ TextureImporter:
       name: basics_10
       rect:
         serializedVersion: 2
-        x: 647
-        y: 283
+        x: 571
+        y: 292
         width: 106
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,12 +447,12 @@ TextureImporter:
       name: basics_11
       rect:
         serializedVersion: 2
-        x: 534
-        y: 14
-        width: 236
-        height: 199
+        x: 768
+        y: 64
+        width: 368
+        height: 368
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,6 +460,48 @@ TextureImporter:
       bones: []
       spriteID: 17c65782d99ec1d30800000000000000
       internalID: 4403651396859423857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_12
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 51
+        width: 388
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f30fd2670f31760800000000000000
+      internalID: 7427544600831606580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_13
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 59
+        width: 236
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8790a55306aef680800000000000000
+      internalID: -8719349295291000950
       vertices: []
       indices: 
       edges: []
