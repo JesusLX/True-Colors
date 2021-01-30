@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6c7390db7f394478220aa68ddc42f8, type: 3}
+  m_Name: Red
+  m_EditorClassIdentifier: 
+  data:
+    color: {r: 0.9056604, g: 0.029903898, b: 0.029903898, a: 1}
+    type:
+      classRef: TrueColors.Core.Cards.Red, Assembly-CSharp
