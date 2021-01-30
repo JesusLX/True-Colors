@@ -103,4 +103,12 @@ public class AudioManager : MonoBehaviour {
         s.volume = volume;
         s.source.volume = s.volume;
     }
+
+    public void ChangeAllVolumes(float value) {
+        sounds.ForEach(s => s.source.volume = value);
+    }
+
+    public void ResetAllVolumes() {
+        sounds.ForEach(s => s.source.volume = s.volume);
+    }
 }
