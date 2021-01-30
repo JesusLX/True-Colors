@@ -53,6 +53,42 @@ TextureImporter:
   - first:
       213: 3634185018575019853
     second: basics_6
+  - first:
+      213: -5109422493642326878
+    second: basics_2
+  - first:
+      213: -4373482889310419996
+    second: basics_7
+  - first:
+      213: -5738938459529730101
+    second: basics_8
+  - first:
+      213: -4561449592043613668
+    second: basics_1
+  - first:
+      213: -1312104197825666566
+    second: basics_10
+  - first:
+      213: 8683494524590473565
+    second: basics_11
+  - first:
+      213: -1843153046924493972
+    second: basics_12
+  - first:
+      213: 8985373252231928945
+    second: basics_13
+  - first:
+      213: -6011888484953045818
+    second: basics_14
+  - first:
+      213: 3314315620766117341
+    second: basics_15
+  - first:
+      213: -7019338172498862588
+    second: basics_16
+  - first:
+      213: -9210059790949106607
+    second: basics_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -165,10 +201,10 @@ TextureImporter:
       name: basics_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 448
-        width: 620
-        height: 632
+        x: 31
+        y: 521
+        width: 340
+        height: 538
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,55 +219,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basics_1
-      rect:
-        serializedVersion: 2
-        x: 650
-        y: 572
-        width: 346
-        height: 458
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f75b0d25aee35420800000000000000
-      internalID: 2617698201625122801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: basics_2
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 517
-        width: 341
-        height: 538
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2d7f951e41109ad0800000000000000
-      internalID: -2697637149727032020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: basics_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 846
-        width: 246
-        height: 203
+        x: 1049
+        y: 818
+        width: 241
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +243,10 @@ TextureImporter:
       name: basics_4
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 583
-        width: 278
-        height: 219
+        x: 1321
+        y: 825
+        width: 212
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,6 +256,153 @@ TextureImporter:
       bones: []
       spriteID: 30d5577026abb44e0800000000000000
       internalID: -1996297079613989629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_2
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 846
+        width: 246
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acfe0b105fa719b0800000000000000
+      internalID: -5109422493642326878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_5
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 531
+        width: 340
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d16ca21c1356d8d0800000000000000
+      internalID: -2821976736463560233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_6
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 545
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fd53805083f6230800000000000000
+      internalID: 3634185018575019853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_7
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 593
+        width: 240
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3476fdb744e43c0800000000000000
+      internalID: -4373482889310419996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_8
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 585
+        width: 257
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc727e390e13b50b0800000000000000
+      internalID: -5738938459529730101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 594
+        width: 326
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12d36d73c972b0c0800000000000000
+      internalID: -4561449592043613668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_9
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 26
+        width: 422
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2012f8e03c580c510800000000000000
+      internalID: 1567399743134310658
       vertices: []
       indices: 
       edges: []
