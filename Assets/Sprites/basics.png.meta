@@ -407,7 +407,7 @@ TextureImporter:
         serializedVersion: 2
         x: 41
         y: 12
-        width: 454
+        width: 447
         height: 453
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -502,6 +502,48 @@ TextureImporter:
       bones: []
       spriteID: a8790a55306aef680800000000000000
       internalID: -8719349295291000950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_14
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 134
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4cc19764b719ca0800000000000000
+      internalID: -6011888484953045818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basics_15
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 148
+        width: 175
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddea414f70defd20800000000000000
+      internalID: 3314315620766117341
       vertices: []
       indices: 
       edges: []
