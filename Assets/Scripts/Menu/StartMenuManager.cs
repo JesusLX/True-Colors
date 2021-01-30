@@ -9,9 +9,7 @@ public class StartMenuManager : MonoBehaviour {
     private void Start() {
         configPanel.gameObject.SetActive(false);
 
-        AudioManager.Instance.Play(Keys.Music.FIRST_ACT);
-        AudioManager.Instance.Play(Keys.Music.BAD_CHOICE);
-
+        AudioManager.Instance.Play(Keys.Music.MENU_MUSIC);
 
     }
 
