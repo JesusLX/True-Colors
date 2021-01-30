@@ -4,6 +4,11 @@ using UnityEngine;
 
 public static class Keys
 {
+    public static class Menu {
+        public static string SOUND_STATE = "SoundState";
+        public static string COLOR_STATE = "ColorState";
+    }
+
     public static class Music {
         public static string BAD_CHOICE = "BadChoice";
         public static string GOOD_CHOICE = "GoodChoice";
