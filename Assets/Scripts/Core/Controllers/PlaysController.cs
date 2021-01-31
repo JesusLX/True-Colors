@@ -65,10 +65,16 @@ namespace TrueColors.Core.Controller
             if(goodPlay)
             {
                 //Se lanzan efectos positivos
+                VFXDirector.Instance.Play("SoftWave", Vector3.zero, cardData.color.Data.color);
+                VFXDirector.Instance.PlayEternal("SimbolPS", Vector3.zero, cardData.color.Data.color, cardData.shape.Data.artwork);
+                VFXDirector.Instance.PlayEternal("FloatingLightPS", Vector3.zero, cardData.color.Data.color, null);
+                AudioManager.Instance.Play(Keys.Music.GOOD_CHOICE);
             }
             else
             {
                 //Se lanzan efectos negativos
+                ShakeController.Instance.Shake();
+                AudioManager.Instance.Play(Keys.Music.BAD_CHOICE);
             }
         }
 
