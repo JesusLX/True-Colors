@@ -36,5 +36,14 @@
     public class Moon : CardShape
     {
     }
+
+    public class RainbowBadShape : CardShape
+    {
+        
+    }
+
+    public class RainbowGoodShape : CardShape
+    {
+    }
     #endregion
 }

@@ -28,5 +28,13 @@
     public class Purple : CardColor
     {
     }
+
+    public class RainbowBadColor : CardColor
+    {
+    }
+
+    public class RainbowGoodColor : CardColor
+    {
+    }
     #endregion
 }
