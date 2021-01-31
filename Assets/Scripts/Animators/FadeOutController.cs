@@ -32,4 +32,8 @@ public class FadeOutController : MonoBehaviour
         callback?.Invoke();
         this.callback = null;
     }
+
+    public void SlapSound() {
+        AudioManager.Instance.Play(Keys.Music.SLAP);
+    }
 }
