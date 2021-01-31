@@ -1,4 +1,7 @@
 ﻿using System;
+using TrueColors.Converters;
+using TrueColors.Core.Cards;
+using TrueColors.Util;
 
 namespace TrueColors.Data
 {
@@ -8,8 +11,10 @@ namespace TrueColors.Data
         public ShapeDataModelWrapper shape;
         public ColorDataModelWrapper color;
         
+        readonly  IConverter<CardDataModel, ICard> converter = new CardDataModelConverter(); 
+        
         #region Converter
-        //TODO: hacer converter
+        public ICard ToCard() => converter.Convert(this);
         #endregion
     }
 }

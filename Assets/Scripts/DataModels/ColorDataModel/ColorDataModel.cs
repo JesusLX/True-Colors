@@ -10,6 +10,7 @@ namespace TrueColors.Data
     public class ColorDataModel
     {
         public Color color;
+        public Material material;
         [ClassImplements(typeof(ICardColor))] public ClassTypeReference type;
         
         readonly  IConverter<ColorDataModel, ICardColor> converter = new ColorDataModelConverter();

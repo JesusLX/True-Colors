@@ -9,6 +9,8 @@ namespace TrueColors.Data
         
         #region Accessors
         public ColorDataModel Data => data;
+
+        public void SetData(ColorDataModel color) => data = color;
         #endregion
     }
 }
