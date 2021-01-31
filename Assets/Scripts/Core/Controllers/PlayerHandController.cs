@@ -103,7 +103,12 @@ namespace Assets.Scripts.Core.Controllers
             }
             
             var index = Random.Range(0, max);
-            return handCards[index].color.Data;
+            var card = handCards[index].color.Data;
+            
+            if(card.type == typeof(RainbowBadColor))
+                return playsController.GetLastUsedCard().color.Data;
+            
+            return card;
         }
 
         public ShapeDataModel GetRandomHandShape()
@@ -117,7 +122,12 @@ namespace Assets.Scripts.Core.Controllers
             
             var index = Random.Range(0, max);
             
-            return handCards[index].shape.Data;
+            var card = handCards[index].shape.Data;
+            
+            if(card.type == typeof(RainbowBadShape) || card.type == typeof(RainbowGoodShape))
+                return playsController.GetLastUsedCard().shape.Data;
+
+            return card;
         }
 
         public List<ColorDataModel> GetAllHandColor()
@@ -144,7 +154,17 @@ namespace Assets.Scripts.Core.Controllers
 
         public bool NoMoreCards()
         {
-            return handCards.Count == 0;
+            if(handCards.Count == 0)
+                return true;
+
+            if(handCards.Count == 1)
+            {
+                var card = handCards[0];
+                if(card.color.Data.type == typeof(RainbowGoodColor) && playsController.goodRainbowBlocked)
+                    return true;
+            }
+
+            return false;
         }
     }
 }
