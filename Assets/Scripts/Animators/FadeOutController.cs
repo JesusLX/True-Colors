@@ -2,8 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FadeOutController : MonoBehaviour
-{
+public class FadeOutController : MonoBehaviour {
+    public static FadeOutController Instance { get; private set; }
+    private void Awake() {
+        if (Instance == null) {
+            Instance = this;
+        } else {
+            Destroy(gameObject);
+        }
+    }
+
     public bool longAnimations;
     private System.Action callback;
     [ContextMenu("FadeIn")]
@@ -14,7 +22,7 @@ public class FadeOutController : MonoBehaviour
             GetComponent<Animator>().Play("Fade_In");
         }
     }
-    
+
     [ContextMenu("FadeOut")]
     public void FadeOut() {
         if (longAnimations) {
@@ -35,5 +43,9 @@ public class FadeOutController : MonoBehaviour
 
     public void SlapSound() {
         AudioManager.Instance.Play(Keys.Music.SLAP);
+    }
+
+    public void PlaySlap() {
+        GetComponent<Animator>().Play("Fade_Slap");
     }
 }

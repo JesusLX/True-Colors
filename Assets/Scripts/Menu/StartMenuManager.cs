@@ -8,10 +8,11 @@ public class StartMenuManager : MonoBehaviour {
     public GameObject creditsPanel;
 
     private void Start() {
-        configPanel.gameObject.SetActive(false);
-        creditsPanel.SetActive(false);
+        if(configPanel)
+            configPanel.gameObject.SetActive(false);
 
-        AudioManager.Instance.Play(Keys.Music.MENU_MUSIC);
+        if(creditsPanel)
+            creditsPanel.SetActive(false);
 
     }
 
@@ -20,7 +21,7 @@ public class StartMenuManager : MonoBehaviour {
             ToggleConfig();
         }
 
-        if (creditsPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape)) {
+        if (creditsPanel && creditsPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape)) {
             ToggleCredits();
         }
     }

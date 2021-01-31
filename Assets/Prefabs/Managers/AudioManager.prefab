@@ -132,17 +132,29 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: afdcbf8f127b76b4ba49d2ad4d2ff3d5, type: 3}
     volume: 0.5
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: FirstAct
     clip: {fileID: 8300000, guid: 9554e93bf56b44b408d66e3bf699e3d2, type: 3}
-    volume: 0.5
+    volume: 0.446
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: ThirdAct
     clip: {fileID: 8300000, guid: a4174a47ee9999747ad329af48b5ae05, type: 3}
     volume: 0.5
     pitch: 1
-    loop: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: SecondAct
+    clip: {fileID: 8300000, guid: 972a51b5e6500d54890a915b04892a72, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GrayCard
+    clip: {fileID: 8300000, guid: 627029357d1a27b4486d74569360eba6, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

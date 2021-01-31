@@ -44,9 +44,13 @@ namespace Assets.Scripts.Core.Turns
                 cardCanvasGroup.blocksRaycasts = true;
             
             playerHandController.GetNextCard();
-            
-            if(playerHandController.NoMoreCards())
+
+            if (playerHandController.NoMoreCards()) {
                 OnNoMoreCards.Invoke();
+                // Tras esperar un poco, pasa a siguiente nivel
+                FadeOutController.Instance.FadeOut();
+                GameController.Instance.GoNextScene();
+            }
         }
 
         public void EndTurn()
