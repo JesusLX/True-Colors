@@ -5,12 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class StartMenuManager : MonoBehaviour {
     public ConfigManager configPanel;
+    public GameObject creditsPanel;
 
     private void Start() {
         configPanel.gameObject.SetActive(false);
+        creditsPanel.SetActive(false);
 
         AudioManager.Instance.Play(Keys.Music.MENU_MUSIC);
 
+    }
+
+    private void Update() {
+        if(configPanel.gameObject.activeSelf && Input.GetKeyDown(KeyCode.Escape)) {
+            ToggleConfig();
+        }
+
+        if (creditsPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape)) {
+            ToggleCredits();
+        }
     }
 
     public void StartGame() {
@@ -24,6 +36,16 @@ public class StartMenuManager : MonoBehaviour {
             configPanel.gameObject.SetActive(false);
         } else {
             configPanel.gameObject.SetActive(true);
+        }
+    }
+
+    public void ToggleCredits() {
+        Debug.Log("LLAMO 2");
+        if (creditsPanel.activeSelf) {
+            creditsPanel.SetActive(false);
+        } else {
+            creditsPanel.SetActive(true);
+
         }
     }
 
