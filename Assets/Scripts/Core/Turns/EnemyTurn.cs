@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Core.Controllers;
@@ -140,13 +141,15 @@ namespace Assets.Scripts.Core.Turns
 
         CardDataModel GenerateGoodButNotReally()
         {
+            Debug.Log("GoodButNotReally");
             var colorData = new ColorDataModelWrapper();
             var shapeData = new ShapeDataModelWrapper();
             
             var lastCard = playsController.GetLastUsedCard();
 
-            if(UseSameColor())
+            if(!HandHasColor(lastCard.color.Data.type))
             {
+                Debug.Log("- same color");
                 var color = lastCard.color.Data;
                 var shape = GenerateBadShape(lastCard.shape.Data, false);
                 
@@ -155,6 +158,11 @@ namespace Assets.Scripts.Core.Turns
             }
             else
             {
+                if(HandHasShape(lastCard.shape.Data.type))
+                {
+                    Debug.Log("Good but not really - impossible card");
+                }
+                Debug.Log("- same shape");
                 var color = GenerateBadColor(lastCard.color.Data, false);
                 var shape = lastCard.shape.Data;
                 
@@ -294,6 +302,16 @@ namespace Assets.Scripts.Core.Turns
 
             Debug.Log("Generando Carta mala - no shape");
             return null;
+        }
+
+        bool HandHasColor(Type type)
+        {
+            return playerHandController.GetAllHandColor().Any(c => c.type == type);
+        }
+        
+        bool HandHasShape(Type type)
+        {
+            return playerHandController.GetAllHandShapes().Any(c => c.type == type);
         }
         #endregion
     }
