@@ -50,6 +50,8 @@ namespace TrueColors.Core.Controller
             spawnedCard.transform.SetParent(dropPosition);
             spawnedCard.transform.position = dropPosition.position;
             
+            RotateCard(spawnedCard);
+            
             var view = spawnedCard.GetComponent<CardView>();
             
             if(view)
@@ -60,6 +62,12 @@ namespace TrueColors.Core.Controller
             playsController.UseCard(card);
             
             enemyTurn.EndTurn();
+        }
+
+        void RotateCard(GameObject card)
+        {
+            var randomRotation = Random.Range(-40f, 40f);
+            card.transform.Rotate(new Vector3(0,0,randomRotation));
         }
     }
 }
