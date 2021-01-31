@@ -21,6 +21,8 @@ namespace Assets.Scripts.Core.Turns
         [SerializeField] List<ColorDataModelWrapper> allColorsData;
         [SerializeField] List<ShapeDataModelWrapper> allShapesData;
 
+        [SerializeField] CardDataModelWrapper rainbowCardData;
+
 
         #region ITurn Implementation
         public bool JustOnce
@@ -241,16 +243,8 @@ namespace Assets.Scripts.Core.Turns
 
         CardDataModel GenerateRainbow()
         {
-            var colorData = allColorsData.First(c => c.Data.type == typeof(RainbowGoodColor));
-            var shapeData = allShapesData.First(c => c.Data.type == typeof(RainbowGoodShape));
-            
-            var card = new CardDataModel
-            {
-                color = colorData,
-                shape = shapeData
-            };
-
-            return card;
+            playsController.goodRainbowBlocked = false;
+            return rainbowCardData.Data;
         }
 
         #region Support Methods
