@@ -2260,17 +2260,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 847074487858872228, guid: 7943d04d002ba0c4e94667a6cc42cd85,
-        type: 3}
-      propertyPath: vfxEffects.Array.data[3].PSPrefab
-      value: 
-      objectReference: {fileID: 2638154429414775478, guid: dd868a98565dd7740977b31ecb048161,
-        type: 3}
-    - target: {fileID: 847074487858872228, guid: 7943d04d002ba0c4e94667a6cc42cd85,
-        type: 3}
-      propertyPath: vfxEffects.Array.data[3].name
-      value: SimbolPS
-      objectReference: {fileID: 0}
     - target: {fileID: 847074487858872229, guid: 7943d04d002ba0c4e94667a6cc42cd85,
         type: 3}
       propertyPath: m_LocalPosition.x
