@@ -125,5 +125,10 @@ namespace Assets.Scripts.Core.Controllers
 
             return shapes;
         }
+
+        public bool NoMoreCards()
+        {
+            return handCards.Count == 0;
+        }
     }
 }
