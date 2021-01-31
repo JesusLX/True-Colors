@@ -17,6 +17,7 @@ namespace TrueColors.Core.Drag
         public void OnBeginDrag(PointerEventData eventData)
         {
             //Debug.Log("OnBeginDrag");
+            AudioManager.Instance.Play(Keys.Music.PICK_DRAW);
             placeholder = new GameObject();
             placeholder.transform.SetParent(transform.parent);
 

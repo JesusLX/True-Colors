@@ -36,4 +36,8 @@ public class FadeOutController : MonoBehaviour
     public void SlapSound() {
         AudioManager.Instance.Play(Keys.Music.SLAP);
     }
+
+    public void PlaySlap() {
+        GetComponent<Animator>().Play("Fade_Slap");
+    }
 }

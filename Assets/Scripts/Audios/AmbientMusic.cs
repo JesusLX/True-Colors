@@ -10,6 +10,7 @@ public class AmbientMusic : MonoBehaviour {
             case 1:
                 CheckPause(Keys.Music.MENU_MUSIC);
                 CheckPlaying(Keys.Music.FIRST_ACT);
+                //AudioManager.Instance.Play(Keys.Music.SPREAD_3_CARDS);
                 break;
             case 2:
                 CheckPause(Keys.Music.FIRST_ACT);
