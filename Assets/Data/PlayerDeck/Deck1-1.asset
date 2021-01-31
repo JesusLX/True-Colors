@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a51f08fa0e9818d4992d33d9dd809a88, type: 3}
-  m_Name: Deck1_1
+  m_Name: Deck1-1
   m_EditorClassIdentifier: 
   data:
     cards:
-    - {fileID: 11400000, guid: 48fe3a0a568844b4c9f52e0438ce1876, type: 2}
-    - {fileID: 11400000, guid: 0af36ea01f79e6845a009b0eff283e7e, type: 2}
-    - {fileID: 11400000, guid: 48fe3a0a568844b4c9f52e0438ce1876, type: 2}
-    - {fileID: 11400000, guid: ab7d83a013454d4409d2500a0105e74d, type: 2}
     - {fileID: 11400000, guid: a0bfd7ad297ff1b49ac742446bae747e, type: 2}
+    - {fileID: 11400000, guid: 57f91d9c97806f746a4b51607d246c7d, type: 2}
