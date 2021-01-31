@@ -59,8 +59,13 @@ MonoBehaviour:
     PSPrefab: {fileID: 7392922275841455529, guid: 04464d8385d5a354f80e07e3c791e963,
       type: 3}
     pool: []
-  - name: HardWave
+  - name: SimbolPS
     time: 2
-    PSPrefab: {fileID: 3703043858015481628, guid: 91c162be94717584c886d2ec562c5a13,
+    PSPrefab: {fileID: 2638154429414775478, guid: dd868a98565dd7740977b31ecb048161,
+      type: 3}
+    pool: []
+  - name: FloatingLightPS
+    time: 2
+    PSPrefab: {fileID: 2936282619585918208, guid: 7f90c321fd36b6344b0a50cc90edfd42,
       type: 3}
     pool: []

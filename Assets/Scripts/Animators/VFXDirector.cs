@@ -26,6 +26,18 @@ public class VFXDirector : MonoBehaviour {
             Debug.LogWarning("El vfx no existe: " + name);
         }
         return ps;
+    }  
+    public ParticleSystem PlayEternal(string name, Vector3 position, Color color,Sprite sprite) {
+        VFX vfx = vfxEffects.Find(v => v.name.Equals(name));
+        ParticleSystem ps = null;
+        if (vfx != null) {
+            ps = vfx.PlayEternal(position, color, sprite);
+            ps.transform.SetParent(this.transform);
+           // StartCoroutine(DisablePS(ps, vfx.time));
+        } else {
+            Debug.LogWarning("El vfx no existe: " + name);
+        }
+        return ps;
     }
     public ParticleSystem Play(string name, Vector3 position, Color color) {
         VFX vfx = vfxEffects.Find(v => v.name.Equals(name));
