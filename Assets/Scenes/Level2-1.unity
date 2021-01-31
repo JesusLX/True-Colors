@@ -866,7 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playsController: {fileID: 727663603}
   deck: {fileID: 11400000, guid: f63d8905225c7554e9dbc0d848f793b3, type: 2}
-  maxHandCards: 4
+  maxHandCards: 3
   playerCardPre: {fileID: 4941237599167579270, guid: 5ad608d469c512f4cb6d1db83775f8c6,
     type: 3}
   handParent: {fileID: 5202994491868308942}
