@@ -55,7 +55,7 @@ MonoBehaviour:
       type: 3}
     pool: []
   - name: RainbowWave
-    time: 2
+    time: 10
     PSPrefab: {fileID: 7392922275841455529, guid: 04464d8385d5a354f80e07e3c791e963,
       type: 3}
     pool: []

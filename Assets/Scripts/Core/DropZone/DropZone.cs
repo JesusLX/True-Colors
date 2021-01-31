@@ -47,6 +47,7 @@ namespace TrueColors.Core
 
             if(drag != null)
             {
+                AudioManager.Instance.Play(Keys.Music.PLACE_CARD_CENTER);
                 RotateDraggable(drag);
                 drag.parentToReturn = transform;
 

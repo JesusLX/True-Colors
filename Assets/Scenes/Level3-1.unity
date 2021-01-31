@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d6e5133e0239d458197c5c33a19761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 0
+  nextScene: 7
   playerHandController: {fileID: 482395327}
   enemyHandController: {fileID: 179993571}
   turnBehaviour: {fileID: 699600408}
@@ -898,7 +898,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 393e8b0ab2f02424d845f20c572df555, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7fde2a05fe4f5b24ca278fad35a34c2b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.429
   m_Pitch: 1

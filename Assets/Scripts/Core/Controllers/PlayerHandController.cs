@@ -52,6 +52,7 @@ namespace Assets.Scripts.Core.Controllers
             //Debug.Log($"{availableCards.Count} > 0 && {handCards.Count} < {maxHandCards}");
             if(availableCards.Count > 0 && handCards.Count < maxHandCards)
             {
+                AudioManager.Instance.Play(Keys.Music.DRAW_CARD,true);
                 //Debug.Log("Robando carta");
                 var card = availableCards[0];
                 availableCards.RemoveAt(0);

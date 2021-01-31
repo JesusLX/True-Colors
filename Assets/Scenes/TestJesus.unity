@@ -3267,5 +3267,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 7464696504538611481, guid: 026a19387e0f97945aaa0bbf2045d29e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 884e4327b9423a144abcae62a1036b64, type: 2}
+    - target: {fileID: 7464696504941118110, guid: 026a19387e0f97945aaa0bbf2045d29e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5084661014962647745, guid: 4434c653f24c9264ebebae4bb535a532,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026a19387e0f97945aaa0bbf2045d29e, type: 3}
