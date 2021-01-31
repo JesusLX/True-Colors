@@ -13,6 +13,8 @@ namespace Assets.Scripts.Core.Turns
         [SerializeField] DropZone dropZone;
         [SerializeField] TurnController turnController;
         [SerializeField] PlaysController playsController;
+        
+        [HideInInspector] public UnityEvent OnNoMoreCards = new UnityEvent();
 
         public bool badRainbow = false;
 
@@ -42,6 +44,9 @@ namespace Assets.Scripts.Core.Turns
                 cardCanvasGroup.blocksRaycasts = true;
             
             playerHandController.GetNextCard();
+            
+            if(playerHandController.NoMoreCards())
+                OnNoMoreCards.Invoke();
         }
 
         public void EndTurn()
