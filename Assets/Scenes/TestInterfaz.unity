@@ -766,6 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641877b6a024deb418368881633d38e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playsController: {fileID: 727663603}
   deck: {fileID: 11400000, guid: adff244cd97d4514aa0ba1db1d23cc58, type: 2}
   maxHandCards: 4
   playerCardPre: {fileID: 4941237599167579270, guid: 5ad608d469c512f4cb6d1db83775f8c6,

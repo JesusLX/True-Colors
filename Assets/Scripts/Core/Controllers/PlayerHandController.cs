@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TrueColors.Core.Controller;
 using TrueColors.Core.Drag;
 using TrueColors.Data;
 using TrueColors.View;
@@ -9,6 +10,7 @@ namespace Assets.Scripts.Core.Controllers
 {
     public class PlayerHandController : MonoBehaviour
     {
+        [SerializeField] PlaysController playsController;
         [SerializeField] DeckDataModelWrapper deck;
         [SerializeField] int maxHandCards;
 
@@ -78,14 +80,25 @@ namespace Assets.Scripts.Core.Controllers
         public ColorDataModel GetRandomHandColor()
         {
             var max = handCards.Count;
-            var index = Random.Range(0, max);
+
+            if(max == 0)
+            {
+                return playsController.GetLastUsedCard().color.Data;
+            }
             
+            var index = Random.Range(0, max);
             return handCards[index].color.Data;
         }
 
         public ShapeDataModel GetRandomHandShape()
         {
             var max = handCards.Count;
+            
+            if(max == 0)
+            {
+                return playsController.GetLastUsedCard().shape.Data;
+            }
+            
             var index = Random.Range(0, max);
             
             return handCards[index].shape.Data;
