@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8822535080827904290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70479253899478387}
+  - component: {fileID: 674366442365617868}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &70479253899478387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8822535080827904290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 322.84824, y: 198.03867, z: -21.847958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674366442365617868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8822535080827904290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f84edd6d5c650419b807bec4a7295d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BadChoice
+    clip: {fileID: 8300000, guid: be7fbeee6490aac41ab31c0bfd307a7b, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GoodChoice
+    clip: {fileID: 8300000, guid: a27eb67411eaa7c409d763a3f3975c7d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Transition
+    clip: {fileID: 8300000, guid: 7d4d044ae3fb78f40b38d7a734c2eb71, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DrawCard
+    clip: {fileID: 8300000, guid: 8205d487c252fbf4e87db18bf20df8a5, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MixShuffle
+    clip: {fileID: 8300000, guid: 01edadf7fd5492c4bbf1345adc798233, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PickDraw
+    clip: {fileID: 8300000, guid: d7c913c02811e704cb1d9ebf769e4df1, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlaceCardCenter
+    clip: {fileID: 8300000, guid: 171e1ab222fdf7145a66ca11c89fa05d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Slap
+    clip: {fileID: 8300000, guid: 3e17c80acc896a9498f0087bdcaada6a, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spread3Cards
+    clip: {fileID: 8300000, guid: abc399d01b0716f44bf6a5c493b08829, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spread4Cards
+    clip: {fileID: 8300000, guid: 393e8b0ab2f02424d845f20c572df555, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spread13Cards
+    clip: {fileID: 8300000, guid: be7fbeee6490aac41ab31c0bfd307a7b, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Upgrade
+    clip: {fileID: 8300000, guid: b77563922e2442d4687b9fe4bace08d9, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WinConversationEndGame
+    clip: {fileID: 8300000, guid: 1b5c6500f6c80814f8e5bb4498b9f69d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fail
+    clip: {fileID: 8300000, guid: 3f645311d8580d444af4b6f528aaaf89, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuMusic
+    clip: {fileID: 8300000, guid: afdcbf8f127b76b4ba49d2ad4d2ff3d5, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FirstAct
+    clip: {fileID: 8300000, guid: 9554e93bf56b44b408d66e3bf699e3d2, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ThirdAct
+    clip: {fileID: 8300000, guid: a4174a47ee9999747ad329af48b5ae05, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

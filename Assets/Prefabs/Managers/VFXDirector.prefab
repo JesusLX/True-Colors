@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &847074487858872235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847074487858872229}
+  - component: {fileID: 847074487858872228}
+  m_Layer: 0
+  m_Name: VFXDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847074487858872229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847074487858872235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0050426, y: -3.8734443, z: 193.979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847074487858872228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847074487858872235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e64b5adff165a44ae0e150bffe6527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vfxEffects:
+  - name: SoftWave
+    time: 2
+    PSPrefab: {fileID: 3703043858015481628, guid: 91c162be94717584c886d2ec562c5a13,
+      type: 3}
+    pool: []
+  - name: HardWave
+    time: 2
+    PSPrefab: {fileID: 3703043858015481628, guid: 91c162be94717584c886d2ec562c5a13,
+      type: 3}
+    pool: []
+  - name: RainbowWave
+    time: 2
+    PSPrefab: {fileID: 7392922275841455529, guid: 04464d8385d5a354f80e07e3c791e963,
+      type: 3}
+    pool: []
+  - name: SimbolPS
+    time: 2
+    PSPrefab: {fileID: 2638154429414775478, guid: dd868a98565dd7740977b31ecb048161,
+      type: 3}
+    pool: []
+  - name: FloatingLightPS
+    time: 2
+    PSPrefab: {fileID: 2936282619585918208, guid: 7f90c321fd36b6344b0a50cc90edfd42,
+      type: 3}
+    pool: []
