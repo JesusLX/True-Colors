@@ -48,7 +48,7 @@ namespace Assets.Scripts.Core.Turns
             if (playerHandController.NoMoreCards()) {
                 OnNoMoreCards.Invoke();
                 // Tras esperar un poco, pasa a siguiente nivel
-                FadeOutController.Instance.FadeOut();
+                FadeOutController.Instance.FadeIn();
                 GameController.Instance.GoNextScene();
             }
         }

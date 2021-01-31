@@ -256,6 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d6e5133e0239d458197c5c33a19761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 4
   playerHandController: {fileID: 482395327}
   enemyHandController: {fileID: 179993571}
   turnBehaviour: {fileID: 699600408}
@@ -355,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableCardPrefabs: []
   usedCardPrefabs: []
-  deck: 01000000020000000100000001000000
+  deck: 040000000200000004000000030000000100000003000000
   dropPosition: {fileID: 1520984490}
   enemyCardPrefab: {fileID: 4941237599167579270, guid: 5ab17aab71da36842a46416b64114732,
     type: 3}
@@ -1329,6 +1330,9 @@ MonoBehaviour:
   playerHandController: {fileID: 482395327}
   dropZone: {fileID: 450488356}
   playsController: {fileID: 727663603}
+  OnNoMoreCards:
+    m_PersistentCalls:
+      m_Calls: []
   badRainbow: 0
   justOnce: 0
 --- !u!1001 &1116752512
