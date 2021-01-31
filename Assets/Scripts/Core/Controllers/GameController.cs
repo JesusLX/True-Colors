@@ -22,7 +22,7 @@ namespace Assets.Scripts.Core.Controllers {
         [SerializeField] TurnBehaviour turnBehaviour;
 
         void Start() {
-            FadeOutController.Instance.FadeIn();
+            FadeOutController.Instance.FadeOut();
             playerHandController.Init();
 
             enemyHandController.LoadDeck();
