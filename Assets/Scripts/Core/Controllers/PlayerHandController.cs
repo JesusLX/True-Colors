@@ -154,7 +154,17 @@ namespace Assets.Scripts.Core.Controllers
 
         public bool NoMoreCards()
         {
-            return handCards.Count == 0;
+            if(handCards.Count == 0)
+                return true;
+
+            if(handCards.Count == 1)
+            {
+                var card = handCards[0];
+                if(card.color.Data.type == typeof(RainbowGoodColor) && playsController.goodRainbowBlocked)
+                    return true;
+            }
+
+            return false;
         }
     }
 }
