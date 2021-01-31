@@ -39,7 +39,7 @@ namespace Assets.Scripts.Core.Controllers
 
         public void LoadHand()
         {
-            Debug.Log($"Loading player hand - {availableCards.Count} || {maxHandCards}");
+            //Debug.Log($"Loading player hand - {availableCards.Count} || {maxHandCards}");
             for(var i = 0; i < availableCards.Count && i < maxHandCards; i++)
             {
                 GetNextCard();
@@ -48,10 +48,10 @@ namespace Assets.Scripts.Core.Controllers
 
         public void GetNextCard()
         {
-            Debug.Log($"{availableCards.Count} > 0 && {handCards.Count} < {maxHandCards}");
+            //Debug.Log($"{availableCards.Count} > 0 && {handCards.Count} < {maxHandCards}");
             if(availableCards.Count > 0 && handCards.Count < maxHandCards)
             {
-                Debug.Log("Robando carta");
+                //Debug.Log("Robando carta");
                 var card = availableCards[0];
                 availableCards.RemoveAt(0);
                 handCards.Add(card);
@@ -67,8 +67,8 @@ namespace Assets.Scripts.Core.Controllers
 
         public void RemoveHandCard(CardDataModel card)
         {
-            Debug.Log($"removing card - {card.color.Data.type}");
-            Debug.Log($"removing card - {card.shape.Data.type}");
+            //Debug.Log($"removing card - {card.color.Data.type}");
+            //Debug.Log($"removing card - {card.shape.Data.type}");
             
             var index = handCards.IndexOf(handCards.First(c => 
                 c.color.Data.type == card.color.Data.type

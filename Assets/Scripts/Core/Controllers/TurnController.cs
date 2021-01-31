@@ -51,7 +51,7 @@ namespace TrueColors.Core.Controller
 
         void AddEndTurnListeners()
         {
-            Debug.Log($"Adding turn listeners - size {turnList.Count}");
+            //Debug.Log($"Adding turn listeners - size {turnList.Count}");
             foreach(var turn in turnList)
             {
                 turn.OnTurnFinished.AddListener(NextTurn);
@@ -60,24 +60,24 @@ namespace TrueColors.Core.Controller
 
         void NextTurn()
         {
-            Debug.Log("Next turn");
+            //Debug.Log("Next turn");
             if(turnList[currentTurnIndex].JustOnce)
                 RemoveTurn();
             
             var totalTurns = turnList.Count;
             var placeHolderNextTurn = currentTurnIndex +1 ;
             
-            Debug.Log($"Total turns - {totalTurns} || Placeholder - {placeHolderNextTurn}");
+            //Debug.Log($"Total turns - {totalTurns} || Placeholder - {placeHolderNextTurn}");
             currentTurnIndex = placeHolderNextTurn >= totalTurns ? 0 : placeHolderNextTurn;
             
-            Debug.Log($"New turn - {currentTurnIndex}");
+            //Debug.Log($"New turn - {currentTurnIndex}");
             
             LaunchTurn();
         }
 
         void RemoveTurn()
         {
-            Debug.Log("Removing turn");
+            //Debug.Log("Removing turn");
             turnList[currentTurnIndex].OnTurnFinished.RemoveListener(NextTurn);
             turnList.RemoveAt(currentTurnIndex);
             currentTurnIndex -= 1;

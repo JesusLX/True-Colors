@@ -54,7 +54,7 @@ namespace TrueColors.Core
 
                 drag.UsedCard();
                 
-                playsController.SetLastUsedCard(usedCard);
+                //playsController.SetLastUsedCard(usedCard);
                 
                 if(usedCard!=null && usedCard.color.Data.type != typeof(RainbowBadColor))
                 {

@@ -37,7 +37,7 @@ namespace Assets.Scripts.Core.Turns
 
         public void StartTurn()
         {
-            Debug.Log("Bienvenido jugador");
+            //Debug.Log("Bienvenido jugador");
             if(cardCanvasGroup)
                 cardCanvasGroup.blocksRaycasts = true;
             
@@ -49,7 +49,7 @@ namespace Assets.Scripts.Core.Turns
             if(cardCanvasGroup)
                 cardCanvasGroup.blocksRaycasts = false;
             
-            playerHandController.RemoveHandCard(playsController.GetLastUsedCard());
+            //playerHandController.RemoveHandCard(playsController.GetLastUsedCard());
             OnTurnFinished.Invoke();
         }
     }

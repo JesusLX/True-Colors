@@ -35,7 +35,7 @@ namespace TrueColors.Core.Controller
 
         public void UseCard(CardDataModel cardData)
         {
-            Debug.Log($"PLAYS CONTROLLER USING CARD - {cardData.color.Data.type.ToString()}");
+            //Debug.Log($"PLAYS CONTROLLER USING CARD - {cardData.color.Data.type.ToString()}");
             ThrowGamefeel(cardData);
             
             lastUsedCard = cardData;
