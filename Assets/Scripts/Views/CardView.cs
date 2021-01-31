@@ -1,6 +1,7 @@
 ﻿using System;
 using TrueColors.Data;
 using UnityEngine;
+using UnityEngine.Experimental.TerrainAPI;
 using UnityEngine.UI;
 
 namespace TrueColors.View
@@ -37,6 +38,15 @@ namespace TrueColors.View
                 references.background.material = data.color.Data.material;
             
             references.background.color = data.color.Data.color;
+
+            if(data.shape.Data.artwork == null)
+            {
+                references.icon.enabled = false;
+            }
+            else
+                references.icon.enabled = true;
+            
+            
             references.icon.sprite = data.shape.Data.artwork != null ? data.shape.Data.artwork : null;
         }
 
