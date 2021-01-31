@@ -83,14 +83,24 @@ public class VFXDirector : MonoBehaviour {
 
             return particles;
         }
-        public ParticleSystem PlayEternal(Vector3 position, Color color, Sprite sprite) {
+        public ParticleSystem PlayEternal(Vector3 position, Color color, Sprite sprite = null) {
             ParticleSystem particles;
             if (!(particles = pool.Find(p => !p.gameObject.activeInHierarchy))) {
                 particles = Instantiate(PSPrefab);
                 pool.Add(particles);
             }
             ParticleSystem.MainModule settings = particles.main;
-            settings.startColor = new ParticleSystem.MinMaxGradient(color);
+            Color softColor = color;
+            color.a = 160f;
+            softColor.a = 40f;
+            settings.startColor = new ParticleSystem.MinMaxGradient(softColor,color);
+
+            if (sprite != null) {
+                if (particles.textureSheetAnimation.spriteCount > 0)
+                    particles.textureSheetAnimation.RemoveSprite(particles.textureSheetAnimation.spriteCount - 1);
+                particles.textureSheetAnimation.AddSprite(sprite);
+            }
+
             particles.transform.position = position;
             particles.gameObject.SetActive(true);
             particles.time = 0;
