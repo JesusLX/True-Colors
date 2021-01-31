@@ -84,6 +84,9 @@ namespace Assets.Scripts.Core.Turns
                 case EnemyHandController.Response.Bad:
                     card = GenerateBadCard();
                     break;
+                case EnemyHandController.Response.GoodButNotReally:
+                    card = GenerateGoodButNotReally();
+                    break;
             }
 
             return card;
@@ -126,6 +129,39 @@ namespace Assets.Scripts.Core.Turns
                 }
             }
 
+            var card = new CardDataModel
+            {
+                color = colorData,
+                shape = shapeData
+            };
+
+            return card;
+        }
+
+        CardDataModel GenerateGoodButNotReally()
+        {
+            var colorData = new ColorDataModelWrapper();
+            var shapeData = new ShapeDataModelWrapper();
+            
+            var lastCard = playsController.GetLastUsedCard();
+
+            if(UseSameColor())
+            {
+                var color = lastCard.color.Data;
+                var shape = GenerateBadShape(lastCard.shape.Data, false);
+                
+                colorData.SetData(color);
+                shapeData.SetData(shape);
+            }
+            else
+            {
+                var color = GenerateBadColor(lastCard.color.Data, false);
+                var shape = lastCard.shape.Data;
+                
+                colorData.SetData(color);
+                shapeData.SetData(shape);
+            }
+            
             var card = new CardDataModel
             {
                 color = colorData,

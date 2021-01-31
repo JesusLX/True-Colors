@@ -10,7 +10,7 @@ namespace TrueColors.Core.Controller
     {
         public enum Response
         {
-            Default, Good, Neutral, Bad
+            Default, Good, Neutral, Bad, GoodButNotReally
         }
 
         public List<GameObject> availableCardPrefabs;
