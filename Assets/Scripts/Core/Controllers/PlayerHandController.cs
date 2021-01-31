@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TrueColors.Core.Cards;
 using TrueColors.Core.Controller;
 using TrueColors.Core.Drag;
 using TrueColors.Data;
@@ -61,6 +62,21 @@ namespace Assets.Scripts.Core.Controllers
                 cardSpawn.GetComponent<CardView>()?.Present(card);
                 cardSpawn.transform.SetParent(handParent);
                 cardSpawn.GetComponent<Draggable>().canvasGroup = canvasGroup;
+                
+                if(card.color.Data.type == typeof(RainbowGoodColor))
+                {
+                    if(playsController.goodRainbowBlocked)
+                    {
+                        //Bloquear con candado y quitar draggable
+                        cardSpawn.GetComponent<CardView>()?.ShowLock(true);
+                        cardSpawn.GetComponent<Draggable>().enabled = false;
+                    }
+                    else
+                    {
+                        cardSpawn.GetComponent<CardView>()?.ShowLock(false);
+                        cardSpawn.GetComponent<Draggable>().enabled = true;
+                    }
+                }
             }
                 
         }

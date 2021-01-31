@@ -16,6 +16,8 @@ namespace TrueColors.Core.Controller
 
         [SerializeField] TurnBehaviour turnBehaviour;
 
+        public bool goodRainbowBlocked = false;
+
         public void Start()
         {
             InitListeners();

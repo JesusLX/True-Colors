@@ -15,6 +15,7 @@ namespace TrueColors.View
         [Header("Card Front")] 
         public Image background;
         public Image icon;
+        public Image lockIcon;
     }
     
     public class CardView : MonoBehaviour
@@ -53,6 +54,11 @@ namespace TrueColors.View
         public CardDataModel GetCardData()
         {
             return cardData;
+        }
+
+        public void ShowLock(bool blocked)
+        {
+            references.lockIcon.enabled = blocked;
         }
     }
 }
