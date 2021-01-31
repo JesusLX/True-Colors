@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WaterRed
   m_EditorClassIdentifier: 
   data:
-    shape: {fileID: 11400000, guid: ee9f1c34fb292ad4db4a27b87357d7c8, type: 2}
+    shape: {fileID: 11400000, guid: 66808d0c449a3ca4e813a2b445354cb3, type: 2}
     color: {fileID: 11400000, guid: ab15df7460a02a040b322fcec4b10080, type: 2}

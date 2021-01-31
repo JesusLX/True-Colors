@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d6e5133e0239d458197c5c33a19761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 5
+  nextScene: 0
   playerHandController: {fileID: 482395327}
   enemyHandController: {fileID: 179993571}
   turnBehaviour: {fileID: 699600408}
@@ -1961,7 +1961,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -158646377427028231, guid: 4434c653f24c9264ebebae4bb535a532,
+      objectReference: {fileID: 5727701227653830284, guid: 4434c653f24c9264ebebae4bb535a532,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026a19387e0f97945aaa0bbf2045d29e, type: 3}
