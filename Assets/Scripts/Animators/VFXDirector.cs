@@ -84,8 +84,10 @@ public class VFXDirector : MonoBehaviour {
                 particles = Instantiate(PSPrefab);
                 pool.Add(particles);
             }
-            ParticleSystem.MainModule settings = particles.main;
-            settings.startColor = new ParticleSystem.MinMaxGradient(color);
+            SetColor(particles, color);
+            foreach (ParticleSystem child in particles.GetComponentsInChildren<ParticleSystem>()) {
+                SetColor(child, color);
+            }
             particles.transform.position = position.position;
             particles.transform.rotation = position.rotation;
             particles.gameObject.SetActive(true);
@@ -101,12 +103,10 @@ public class VFXDirector : MonoBehaviour {
                 particles = Instantiate(PSPrefab);
                 pool.Add(particles);
             }
-            ParticleSystem.MainModule settings = particles.main;
-            Color softColor = color;
-            color.a = 160f;
-            softColor.a = 40f;
-            settings.startColor = new ParticleSystem.MinMaxGradient(softColor,color);
-
+            SetColors(particles,color);
+            foreach (ParticleSystem child in particles.GetComponentsInChildren<ParticleSystem>()) {
+                SetColors(child, color);
+            }
             if (sprite != null) {
                 if (particles.textureSheetAnimation.spriteCount > 0)
                     particles.textureSheetAnimation.RemoveSprite(particles.textureSheetAnimation.spriteCount - 1);
@@ -121,6 +121,18 @@ public class VFXDirector : MonoBehaviour {
 
             return particles;
         }
+        private void SetColor(ParticleSystem ps, Color color) {
+            ParticleSystem.MainModule settings = ps.main;
+            settings.startColor = new ParticleSystem.MinMaxGradient(color);
+        }   
+        private void SetColors(ParticleSystem ps, Color color) {
+            ParticleSystem.MainModule settings = ps.main;
+            Color softColor = color;
+            color.a = .7f;
+            softColor.a = .2f;
+            settings.startColor = new ParticleSystem.MinMaxGradient(softColor, color);
+        }
+
 
         public ParticleSystem Play(Vector3 position, Color color) {
             ParticleSystem particles;
@@ -129,8 +141,10 @@ public class VFXDirector : MonoBehaviour {
                 pool.Add(particles);
             }
             ParticleSystem.MainModule settings = particles.main;
-            settings.startColor = new ParticleSystem.MinMaxGradient(color);
-            particles.transform.position = position;
+            SetColor(particles, color);
+            foreach (ParticleSystem child in particles.GetComponentsInChildren<ParticleSystem>()) {
+                SetColor(child, color);
+            }
             //  particles.transform.rotation = position.rotation;
             particles.gameObject.SetActive(true);
             particles.time = 0;
