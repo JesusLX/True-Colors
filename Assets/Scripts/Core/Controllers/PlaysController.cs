@@ -57,12 +57,21 @@ namespace TrueColors.Core.Controller
             if(lastUsedCard == null)
                 return true;
 
+            if(cardData.color.Data.type == typeof(RainbowGoodColor))
+                return true;
+
+            if(lastUsedCard.color.Data.type == typeof(RainbowGoodColor))
+                return true;
+
             return cardData.ToCard().IsMatch(lastUsedCard.ToCard());
         }
 
         void ThrowGamefeel(CardDataModel cardData)
         {
             var goodPlay = IsPlayEffective(cardData);
+
+            if(cardData.color.Data.type == typeof(RainbowGoodColor))
+                VFXDirector.Instance.Play("RainbowWave", Vector3.zero);
 
             if(goodPlay)
             {

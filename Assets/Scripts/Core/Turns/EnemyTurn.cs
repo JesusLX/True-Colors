@@ -20,8 +20,8 @@ namespace Assets.Scripts.Core.Turns
 
         [SerializeField] List<ColorDataModelWrapper> allColorsData;
         [SerializeField] List<ShapeDataModelWrapper> allShapesData;
-        
-        
+
+
         #region ITurn Implementation
         public bool JustOnce
         {
@@ -87,6 +87,9 @@ namespace Assets.Scripts.Core.Turns
                     break;
                 case EnemyHandController.Response.GoodButNotReally:
                     card = GenerateGoodButNotReally();
+                    break;
+                case EnemyHandController.Response.Fagota:
+                    card = GenerateRainbow();
                     break;
             }
 
@@ -227,6 +230,20 @@ namespace Assets.Scripts.Core.Turns
             colorData.SetData(color);
             shapeData.SetData(shape);
 
+            var card = new CardDataModel
+            {
+                color = colorData,
+                shape = shapeData
+            };
+
+            return card;
+        }
+
+        CardDataModel GenerateRainbow()
+        {
+            var colorData = allColorsData.First(c => c.Data.type == typeof(RainbowGoodColor));
+            var shapeData = allShapesData.First(c => c.Data.type == typeof(RainbowGoodShape));
+            
             var card = new CardDataModel
             {
                 color = colorData,
