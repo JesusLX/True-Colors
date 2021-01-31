@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d6e5133e0239d458197c5c33a19761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 0
+  nextScene: 3
   playerHandController: {fileID: 482395327}
   enemyHandController: {fileID: 179993571}
   turnBehaviour: {fileID: 699600408}
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playsController: {fileID: 727663603}
   deck: {fileID: 11400000, guid: b51437a3c446fdf42b0948e06869ab7f, type: 2}
-  maxHandCards: 6
+  maxHandCards: 4
   playerCardPre: {fileID: 4941237599167579270, guid: 5ad608d469c512f4cb6d1db83775f8c6,
     type: 3}
   handParent: {fileID: 5202994491868308942}
